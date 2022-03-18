@@ -31,18 +31,6 @@ body {
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(241,57,57,1) 50%, rgba(252,176,69,1) 100%);
     filter: blur(2px);
-    background-size: 150%;
-    animation-name: animation;
-    animation-timing-function: linear;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes animation {
-    0%{background-position:0% 0}
-    25%{background-position:50% 0}
-    50%{background-position:100% 0}
-    75%{background-position:50% 0}
 }
 
 .main {
@@ -135,14 +123,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 61px;
+    /* height: 61px; */
     border-bottom: 1px solid #00000059;
-    padding: 1.2em 0 1.2em 1em;
+    padding: 10px 0 10px 1em;
     font-size: var(--size2);
 }
 
 .task__content {
+    width: 90%;
     flex-grow: 1;
+    overflow-wrap: break-word;
     cursor: default;
 }
 
