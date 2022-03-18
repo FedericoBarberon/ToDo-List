@@ -31,6 +31,18 @@ body {
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(241,57,57,1) 50%, rgba(252,176,69,1) 100%);
     filter: blur(2px);
+    background-size: 150%;
+    animation-name: animation;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    0%{background-position:0% 0}
+    25%{background-position:50% 0}
+    50%{background-position:100% 0}
+    75%{background-position:50% 0}
 }
 
 .main {
@@ -115,6 +127,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
+    transition: height 1s;
 }
 
 .task {
