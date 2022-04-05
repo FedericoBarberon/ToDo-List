@@ -125,8 +125,35 @@ body {
     align-items: center;
     /* height: 61px; */
     border-bottom: 1px solid #00000059;
-    padding: 10px 0 10px 1em;
+    padding: 10px 0 10px;
     font-size: var(--size2);
+}
+
+.task__check {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    margin-inline: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: lightgray;
+    color: lightgray;
+    transition: background-color .2s;
+}
+
+.task__check:checked {
+    background-color: lightgreen;
+}
+
+.task__check:checked::after {
+    display: block;
+    padding-top: 5px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: var(--size1);
+    content: "\f00c";
+    text-align: center;
+    color: #333;
 }
 
 .task__content {
@@ -172,6 +199,18 @@ body {
 .tasks::-webkit-scrollbar-thumb:hover {
     background-color: #aaa;
 }
+
+.data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 
 @media (min-width: 780px) {
     :root {

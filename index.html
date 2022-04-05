@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/90fc103499.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="background"></div>
@@ -18,10 +19,15 @@
 
         <form class="taskForm" id="taskForm">
             <input type="text" name="task" placeholder="New task..." class="taskForm__task" autocomplete="off" spellcheck="false">
-            <button class="taskForm__addButton">+</button>
+            <button class="taskForm__addButton" title="Add Task">+</button>
         </form>
         
-        <section class="tasks hidden" id="tasks"></section>
+        <section class="tasks hidden" id="tasks">
+        </section>
+        <div class="data">
+            <span id="taskNum">0 Tasks</span>
+            <span id="taskComplete">0/0 Complete</span>
+        </div>
     </div>
 </body>
 </html>
